@@ -6,5 +6,7 @@ mosaik-hdf5==0.3
 mosaik-householdsim==2.0.2
 mosaik-pypower==0.7.2
 mosaik-web==0.2.1
+simpy==3.0.12
 networkx==2.0
 pandas==0.25
+pade==2.2.4
