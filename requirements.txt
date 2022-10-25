@@ -1,12 +1,11 @@
 arrow==0.14
-mosaik==2.4.0
-mosaik-api==2.2
+mosaik==3.0.2
+mosaik-api==3.0.2
 mosaik-csv==1.0.2
-mosaik-hdf5==0.3
-mosaik-householdsim==2.0.2
-mosaik-pypower==0.7.2
-mosaik-web==0.2.1
-simpy==3.0.12
-networkx==2.0
+mosaik-hdf5==0.4
+mosaik-householdsim==2.1.0
+mosaik-pypower==0.8.2
+mosaik-web==0.3
+networkx==2.5
 pandas==0.25
-pade==2.2.4
+# pade==2.2.4

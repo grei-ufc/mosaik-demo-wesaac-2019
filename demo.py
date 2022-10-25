@@ -58,7 +58,8 @@ def main():
     world = mosaik.World(sim_config)
     create_scenario(world)
     # world.run(until=END)  # As fast as possilbe
-    world.run(until=END, rt_factor=1/(30*60))
+    # world.run(until=END, rt_factor=1/(1 * 30 * 60))
+    world.run(until=END, rt_factor=None)
 
 def create_scenario(world):
     # Start simulators

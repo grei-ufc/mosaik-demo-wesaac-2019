@@ -6,7 +6,7 @@ commands = 'pade start-runtime --config_file pade_config.json'
 commands = shlex.split(commands)
 p1 = subprocess.Popen(commands, stdin=subprocess.PIPE)
 
-sleep(6.0)
+sleep(15.0)
 
 commands = 'python demo.py'
 commands = shlex.split(commands)
