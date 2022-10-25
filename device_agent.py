@@ -14,6 +14,7 @@ import pickle
 import random
 
 MOSAIK_MODELS = {
+    'api_version': '3.0.2',
     'type': 'event-based',
     'models': {
         'DeviceAgent': {
