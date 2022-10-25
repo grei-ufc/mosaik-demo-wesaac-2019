@@ -39,7 +39,7 @@ class MosaikSim(MosaikCon):
                               'storage_device': []}
         self.P = 100.0
 
-    def init(self, time_resolution, sid, eid_prefix, prosumer_ref, start, step_size):
+    def init(self, sid, time_resolution, eid_prefix, prosumer_ref, start, step_size):
         # self.sid = sid
         self.prosumer_ref = 'ProsumerSim0-0.Prosumer_{}'.format(prosumer_ref)
         self.node_id = prosumer_ref

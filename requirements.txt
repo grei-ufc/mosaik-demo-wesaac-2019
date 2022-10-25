@@ -1,6 +1,6 @@
 mosaik==3.0.2
 mosaik-api==3.0.2
-mosaik-csv==1.0.2
+mosaik-csv==1.2.0
 mosaik-hdf5==0.4
 mosaik-householdsim==2.1.0
 mosaik-pypower==0.8.2
