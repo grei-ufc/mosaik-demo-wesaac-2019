@@ -14,12 +14,13 @@ import pickle
 import random
 
 MOSAIK_MODELS = {
-    'api_version': '2.2',
+    'type': 'event-based',
     'models': {
         'DeviceAgent': {
             'public': True,
             'params': [],
             'attrs': ['P', 'node_id'],
+            'trigger': ['P'],
         },
     },
 }
@@ -38,7 +39,7 @@ class MosaikSim(MosaikCon):
                               'storage_device': []}
         self.P = 100.0
 
-    def init(self, sid, eid_prefix, prosumer_ref, start, step_size):
+    def init(self, time_resolution, sid, eid_prefix, prosumer_ref, start, step_size):
         # self.sid = sid
         self.prosumer_ref = 'ProsumerSim0-0.Prosumer_{}'.format(prosumer_ref)
         self.node_id = prosumer_ref
@@ -57,7 +58,7 @@ class MosaikSim(MosaikCon):
             {'eid': self.eid, 'type': 'DeviceAgent'})
         return self.entities
 
-    def step(self, time, inputs):
+    def step(self, time, inputs, max_advance):
         '''
         {'DeviceAgent_10': 
             {'device_status': 
